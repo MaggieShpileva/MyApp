@@ -1,0 +1,14 @@
+First step
+git add .
+
+Second step
+git commit -m "Your comment"
+
+Third step
+git push
+
+If you want create new branch click to "master" in bottom-left a part of screen
+and click "+Create new branch", then enter branch name.
+
+Repeat first second and third steps after create branch,
+Then create pull request and merge it into master.
