@@ -18,7 +18,7 @@ export const Profile: FC<Props> = (props) => {
         <h4 className="title_2">Speakers</h4>
         <div className="main_logo">
           <a className="logo" href="#">
-            f
+            F
           </a>
           <a className="logo" href="#">
             <img className="twitter" src={Twitter} />
