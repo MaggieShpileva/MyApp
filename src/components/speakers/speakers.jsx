@@ -28,6 +28,9 @@ export const Speakers = () => {
       <Profile image={FourthSpeaker} title_1={info.name_2} text={info.text} />
       <Profile image={FifthSpeaker} title_1={info.name_2} text={info.text} />
       <Profile image={SixSpeaker} title_1={info.name_2} text={info.text} />
+
+      <Profile image={FirstSpeaker} title_1={info.name_1} text={info.text_1} />
+      <Profile image={SixSpeaker} title_1={info.name_2} text={info.text} />
     </div>
   );
 };
