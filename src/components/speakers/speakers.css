@@ -1,0 +1,6 @@
+.Speakers {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1040px;
+  margin: auto;
+}
