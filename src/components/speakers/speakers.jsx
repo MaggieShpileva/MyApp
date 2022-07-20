@@ -7,6 +7,7 @@ import ThirdSpeaker from "../../img/speakers/speaker-3.jpg";
 import FourthSpeaker from "../../img/speakers/speaker-4.jpg";
 import FifthSpeaker from "../../img/speakers/speaker-5.jpg";
 import SixSpeaker from "../../img/speakers/speaker-6.jpg";
+import { Header } from "../Header/Header";
 const info = {
   name_1: "Jayden Gill",
   text_1:
@@ -21,16 +22,27 @@ const info = {
 
 export const Speakers = () => {
   return (
-    <div className="Speakers">
-      <Profile image={FirstSpeaker} title_1={info.name_1} text={info.text_1} />
-      <Profile image={SecondSpeaker} title_1={info.name_2} text={info.text} />
-      <Profile image={ThirdSpeaker} title_1={info.name_2} text={info.text} />
-      <Profile image={FourthSpeaker} title_1={info.name_2} text={info.text} />
-      <Profile image={FifthSpeaker} title_1={info.name_2} text={info.text} />
-      <Profile image={SixSpeaker} title_1={info.name_2} text={info.text} />
+    <div>
+      <Header />
+      <div className="Speakers">
+        <Profile
+          image={FirstSpeaker}
+          title_1={info.name_1}
+          text={info.text_1}
+        />
+        <Profile image={SecondSpeaker} title_1={info.name_2} text={info.text} />
+        <Profile image={ThirdSpeaker} title_1={info.name_2} text={info.text} />
+        <Profile image={FourthSpeaker} title_1={info.name_2} text={info.text} />
+        <Profile image={FifthSpeaker} title_1={info.name_2} text={info.text} />
+        <Profile image={SixSpeaker} title_1={info.name_2} text={info.text} />
 
-      <Profile image={FirstSpeaker} title_1={info.name_1} text={info.text_1} />
-      <Profile image={SixSpeaker} title_1={info.name_2} text={info.text} />
+        <Profile
+          image={FirstSpeaker}
+          title_1={info.name_1}
+          text={info.text_1}
+        />
+        <Profile image={SixSpeaker} title_1={info.name_2} text={info.text} />
+      </div>
     </div>
   );
 };

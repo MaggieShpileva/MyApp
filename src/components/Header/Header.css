@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: black;
+  text-align: left;
+  height: 120px;
+  width: 1020px;
+}
+.logo_main {
+  margin-right: 60px;
+  height: 40px;
+  width: 170px;
+}
+li {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-right: 30px;
+}
+.point-menu {
+  font-size: 14px;
+}
+.point-menu.active {
+  color: orange;
+}
+
+a {
+  text-decoration: none;
+}
+ul li a:hover {
+  text-decoration: underline;
+}
+.button {
+  background-image: url("../../img/newslatter-bg.jpg");
+  background-image: linear-gradient(to right, #ee8425 0%, #f9488b 100%);
+  padding: 12px 60px;
+  text-align: center;
+  color: $light;
+  text-decoration: none;
+  border-radius: 50px;
+  margin-left: 30px;
+  font-size: 16px;
+  font-weight: 600;
+}
