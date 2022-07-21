@@ -15,7 +15,8 @@ export const Header = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="About_us" className="point-menu">
+          <NavLink to="/AboutUs" className="point-menu">
+            <link rel="stylesheet" href="AboutUs" />
             about
           </NavLink>
         </li>
@@ -27,7 +28,8 @@ export const Header = () => {
         </li>
 
         <li>
-          <a href="#" className="point-menu">
+          <a href="/cardSpeaker" className="point-menu">
+            <link rel="stylesheet" href="/cardSpeaker" />
             schedule
           </a>
         </li>

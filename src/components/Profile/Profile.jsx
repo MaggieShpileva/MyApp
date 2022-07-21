@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-
 import Twitter from "../../img/twitter-3_icon-icons.com_50735.png";
 import "./Profile.css";
 

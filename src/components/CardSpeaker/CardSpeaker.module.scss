@@ -1,0 +1,59 @@
+.block {
+  width: 260px;
+  height: 300px;
+}
+
+.active_block {
+  margin: -280px auto;
+
+  width: 0px;
+  height: 30px;
+  background-image: url("../../img/logo_bg.jpg");
+  opacity: 0.7;
+  transition-duration: 0.5s;
+  transition-property: all;
+  border-radius: 5px;
+}
+
+.block:hover .active_block {
+  width: 130px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  .twitter::after {
+    background-image: url("../../img/twitter-3_icon-icons.com_50735.png");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    content: " ";
+    color: white;
+    width: 30px;
+    height: 30px;
+    transition-duration: 1s;
+    margin: 2px;
+  }
+  .facebook::after {
+    background-image: url("../../img/vk-logo.png");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    content: " ";
+    color: white;
+    width: 30px;
+    height: 30px;
+    transition-duration: 1s;
+    margin: 3px;
+  }
+  .instagram::after {
+    background-image: url("../../img/3721672-instagram_108066.ico");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    content: " ";
+    color: white;
+    width: 30px;
+    height: 30px;
+    transition-duration: 1s;
+    margin: 2px;
+  }
+}

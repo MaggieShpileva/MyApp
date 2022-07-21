@@ -8,6 +8,7 @@ import FourthSpeaker from "../../img/speakers/speaker-4.jpg";
 import FifthSpeaker from "../../img/speakers/speaker-5.jpg";
 import SixSpeaker from "../../img/speakers/speaker-6.jpg";
 import { Header } from "../Header/Header";
+
 const info = {
   name_1: "Jayden Gill",
   text_1:
