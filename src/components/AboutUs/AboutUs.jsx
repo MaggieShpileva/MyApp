@@ -15,6 +15,9 @@ import SeventhSpeaker from "../../img/team-member/member-7.jpg";
 import EighthSpeaker from "../../img/team-member/member-8.jpg";
 import NinthSpeaker from "../../img/team-member/member-9.jpg";
 import TenthSpeaker from "../../img/team-member/member-10.jpg";
+const title = {
+  title: "The 2019 Conference",
+};
 export const AboutUs = () => {
   return (
     <div>
@@ -38,7 +41,7 @@ export const AboutUs = () => {
             page you will get paid.
           </p>
         </div>
-        <About_conferens />
+        <About_conferens title={title.title} />
         <div className={styles.sectionTitle}>
           <h1>Who’s speaking</h1>
           <p>

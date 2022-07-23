@@ -1,7 +1,10 @@
-import React from "react";
+import React, { FC } from "react";
 import photo from "../../img/h-about.jpg";
 import "./About_conferens.css";
-export const About_conferens = () => {
+type Props = {
+  title: string,
+};
+export const About_conferens: FC<Props> = (props) => {
   return (
     <div className="about-conference">
       <div className="conteiner">
@@ -10,7 +13,7 @@ export const About_conferens = () => {
             <img src={photo} alt="" />
           </div>
           <div className="text_info">
-            <h1 className="text_h1">About Conference</h1>
+            <h1 className="text_h1">{props.title}</h1>
             <p className="text_style">
               When I first got into the online advertising business, I was
               looking for the magical combination that would put my website into
