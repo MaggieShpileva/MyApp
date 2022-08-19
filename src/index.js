@@ -18,7 +18,6 @@ root.render(
       <Route path="/speakers" element={<Speakers />}></Route>
       <Route path="/home" element={<Home />}></Route>
       <Route path="/AboutUs" element={<AboutUs />}></Route>
-      <Route path="/CardSpeaker" element={<CardSpeaker />}></Route>
     </Routes>
   </BrowserRouter>
 );

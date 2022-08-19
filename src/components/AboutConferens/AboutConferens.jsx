@@ -1,10 +1,10 @@
 import React, { FC } from "react";
 import photo from "../../img/h-about.jpg";
-import "./About_conferens.css";
+import "./AboutConferens.css";
 type Props = {
   title: string,
 };
-export const About_conferens: FC<Props> = (props) => {
+export const AboutConferens: FC<Props> = (props) => {
   return (
     <div className="about-conference">
       <div className="conteiner">

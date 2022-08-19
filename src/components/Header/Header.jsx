@@ -28,8 +28,8 @@ export const Header = () => {
         </li>
 
         <li>
-          <a href="/cardSpeaker" className="point-menu">
-            <link rel="stylesheet" href="/cardSpeaker" />
+          <a href="" className="point-menu">
+            <link rel="stylesheet" href=" " />
             schedule
           </a>
         </li>

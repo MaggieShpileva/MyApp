@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./MainInfo.module.scss";
 import Hero from "../../img/hero-right.png";
-export const Main_info = () => {
+export const MainInfo = () => {
   return (
     <div className={styles.main_info}>
       <div className={styles.conteiner}>
