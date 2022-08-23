@@ -12,3 +12,5 @@ and click "+Create new branch", then enter branchs name.
 
 Repeat first second and third steps after create branch,
 Then create pull request and merge it into master.
+
+Added passphrase with help this command "ssh-add ~/.ssh/id_rsa" 
