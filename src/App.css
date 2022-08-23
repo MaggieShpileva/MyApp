@@ -6,6 +6,7 @@
   height: 40vmin;
   pointer-events: none;
   cursor: pointer;
+  color: red;
 }
 
 @media (prefers-reduced-motion: no-preference) {
