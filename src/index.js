@@ -5,17 +5,23 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Header } from "./components/Header/Header";
-import { Speakers } from "./components/speakers/Speakers";
+import { Speakers } from "./components/speakers/speakers";
 import { Home } from "./components/Home/Home";
 import { AboutUs } from "./components/AboutUs/AboutUs";
 import { CardSpeaker } from "./components/CardSpeaker/CardSpeaker";
+import state from "./Redux/state";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/header" element={<Header />}></Route>
-      <Route path="/speakers" element={<Speakers />}></Route>
+      <Route
+        path="/speakers"
+        element={<Speakers info={state.speakersPage.info} />}
+      ></Route>
       <Route path="/home" element={<Home />}></Route>
       <Route path="/AboutUs" element={<AboutUs />}></Route>
     </Routes>

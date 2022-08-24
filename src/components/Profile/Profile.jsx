@@ -2,18 +2,12 @@ import React, { FC } from "react";
 import Twitter from "../../img/twitter-3_icon-icons.com_50735.png";
 import "./Profile.css";
 
-type Props = {
-  image: string,
-  title_1: string,
-  text: string,
-};
-
-export const Profile: FC<Props> = (props) => {
+export const Profile = ({ image, title, text }) => {
   return (
     <div className="card">
-      <img src={props.image} />
+      <img src={image} />
       <div className="info">
-        <h1 className="title_1">{props.title_1} </h1>
+        <h1 className="title_1">{title} </h1>
         <h4 className="title_2">Speakers</h4>
         <div className="main_logo">
           <a className="logo" href="#">
@@ -26,7 +20,7 @@ export const Profile: FC<Props> = (props) => {
             G
           </a>
         </div>
-        <span className="text">{props.text}</span>
+        <span className="text">{text}</span>
       </div>
     </div>
   );

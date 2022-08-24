@@ -1,5 +1,5 @@
 import "./App.css";
-import { Speakers } from "./components/speakers/Speakers";
+import { Speakers } from "../src/components/speakers/speakers";
 import { Header } from "./components/Header/Header";
 import { Route } from "react-router-dom";
 
@@ -12,3 +12,4 @@ const App = () => {
 };
 
 export default App;
+
