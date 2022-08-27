@@ -1,0 +1,50 @@
+.Comments {
+  padding: 0;
+  .headerPage {
+    margin: 30px 0 80px 0;
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    p {
+      font-size: 18px;
+      color: #6a6b7c;
+      margin-bottom: 0;
+      text-align: center;
+    }
+  }
+  .mainWindow {
+    width: 1000px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0 0 30px;
+
+    h2 {
+      padding: 0;
+      font-size: 35px;
+      font-weight: 400;
+      margin-left: 18px;
+    }
+    textarea {
+      width: 980px;
+      height: 100px;
+      resize: none;
+      font-size: 20px;
+      font-weight: 100;
+      margin-bottom: 5px;
+    }
+    button {
+      width: 250px;
+      height: 40px;
+      margin-top: 30px;
+      border: 0;
+      border-radius: 50px;
+      background-image: linear-gradient(#ee8425 0%, #f9488b 100%);
+    }
+  }
+}

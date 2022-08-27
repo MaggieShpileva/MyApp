@@ -1,0 +1,38 @@
+.Form {
+  position: absolute;
+
+  width: 500px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #ee8425;
+  border-radius: 100px;
+
+  input {
+    width: 290px;
+    height: 33px;
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  input:focus {
+    width: 300px;
+  }
+
+  button {
+    width: 200px;
+    height: 40px;
+    margin: 15px;
+    background: #f7270c;
+    border: 0;
+    border-radius: 10px;
+    background-image: linear-gradient(120deg, #ee8425 0%, #f9488b 100%),
+      linear-gradient(120deg, #ee8425 0%, #f9488b 100%);
+    color: white;
+    font-size: 18px;
+  }
+}

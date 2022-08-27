@@ -8,8 +8,8 @@ import { Header } from "./components/Header/Header";
 import { Speakers } from "./components/speakers/speakers";
 import { Home } from "./components/Home/Home";
 import { AboutUs } from "./components/AboutUs/AboutUs";
-import { CardSpeaker } from "./components/CardSpeaker/CardSpeaker";
-import state from "./Redux/state";
+import { state } from "./Redux/state";
+import { Testimonials } from "./components/Testimonials/Testimonials";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -24,6 +24,7 @@ root.render(
       ></Route>
       <Route path="/home" element={<Home />}></Route>
       <Route path="/AboutUs" element={<AboutUs />}></Route>
+      <Route path="/Testimonials" element={<Testimonials />}></Route>
     </Routes>
   </BrowserRouter>
 );

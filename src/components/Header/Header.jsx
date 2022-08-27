@@ -28,10 +28,10 @@ export const Header = () => {
         </li>
 
         <li>
-          <a href="" className="point-menu">
-            <link rel="stylesheet" href=" " />
-            schedule
-          </a>
+          <NavLink to="/Testimonials" className="point-menu">
+            Testimonials
+            <link rel="stylesheet" href="Testimonials " />
+          </NavLink>
         </li>
 
         <li>

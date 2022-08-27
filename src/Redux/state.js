@@ -5,7 +5,10 @@ import FourthSpeaker from "../img/speakers/speaker-4.jpg";
 import FifthSpeaker from "../img/speakers/speaker-5.jpg";
 import SixSpeaker from "../img/speakers/speaker-6.jpg";
 
-const state = {
+import CommentFotoFirst from "../img/schedule/schedule-3.jpg";
+import CommentFotoSecond from "../img/schedule/schedule-2.jpg";
+import CommentFotoGuest from "../img/schedule/guest.png";
+export let state = {
   speakersPage: {
     info: [
       {
@@ -47,4 +50,28 @@ const state = {
   },
 };
 
-export default state;
+export let addition = {
+  comments: [
+    {
+      name: "John Smith",
+      text: "There is no denying the fact that the success of an advertisement lies mostly in the headline. The headline should attract the reader and make him read the rest of the advertisement.",
+      image: CommentFotoFirst,
+    },
+
+    {
+      name: "Emma Sandoval",
+      text: "First impression is made by logo or its absence. To know the importance of a logo just answer one question: How many big, leading and famous companies don’t have logos?",
+      image: CommentFotoSecond,
+    },
+  ],
+};
+
+export let newAddedComment = (text) => {
+  let comment = {
+    name: "Guest",
+    text: text,
+    image: CommentFotoGuest,
+  };
+
+  addition.comments.push(comment);
+};

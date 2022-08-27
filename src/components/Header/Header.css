@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   margin: 0 auto;
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
@@ -9,10 +10,11 @@
   color: black;
   text-align: left;
   height: 120px;
-  width: 1020px;
+  width: 1200px;
 }
 .logo_main {
   margin-right: 60px;
+  margin-left: 0;
   height: 40px;
   width: 170px;
 }
@@ -39,7 +41,7 @@ ul li a:hover {
   background-image: linear-gradient(to right, #ee8425 0%, #f9488b 100%);
   padding: 12px 60px;
   text-align: center;
-  color: $light;
+  color: light;
   text-decoration: none;
   border-radius: 50px;
   margin-left: 30px;
