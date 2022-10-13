@@ -1,14 +1,22 @@
 import "./App.css";
-import { Speakers } from "../src/components/speakers/speakers";
-import { Header } from "./components/Header/Header";
-import { Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Speakers } from "./components/speakers/speakers.tsx";
+import { Home } from "./components/Home/Home.tsx";
+import { AboutUs } from "./components/AboutUs/AboutUs.tsx";
+import { Testimonials } from "./components/Testimonials/Testimonials.tsx";
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <Header />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/speakers" element={<Speakers />}></Route>
+        <Route path="/home" element={<Home />}></Route>
+        <Route path="/AboutUs" element={<AboutUs />}></Route>
+        <Route path="/Testimonials" element={<Testimonials />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
-};
+}
 
 export default App;

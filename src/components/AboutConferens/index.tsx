@@ -1,20 +1,20 @@
 import React, { FC } from "react";
 import photo from "../../img/h-about.jpg";
-import "./AboutConferens.css";
+import styles from "./AboutConferens.module.scss";
 type Props = {
-  title: string,
+  title: string;
 };
 export const AboutConferens: FC<Props> = (props) => {
   return (
-    <div className="about-conference">
-      <div className="conteiner">
-        <div className="row">
-          <div className="foto">
+    <div className={styles.about_conference}>
+      <div className={styles.conteiner}>
+        <div className={styles.row}>
+          <div className={styles.foto}>
             <img src={photo} alt="" />
           </div>
-          <div className="text_info">
-            <h1 className="text_h1">{props.title}</h1>
-            <p className="text_style">
+          <div className={styles.text_info}>
+            <h1 className={styles.text_h1}>{props.title}</h1>
+            <p className={styles.text_style}>
               When I first got into the online advertising business, I was
               looking for the magical combination that would put my website into
               the top search engine rankings, catapult me to the forefront of
@@ -24,24 +24,25 @@ export const AboutConferens: FC<Props> = (props) => {
               this kind of thinking and shake my head.
             </p>
 
-            <ul className="text_ul">
-              <li className="text_style">
-                <span className="icon"> </span>
+            <ul className={styles.text_ul}>
+              <li className={styles.text_style}>
+                <span className={styles.icon}> </span>
                 Write On Your Business Card
               </li>
-              <li className="text_style">
-                <span className="icon"> </span>
+              <li className={styles.text_style}>
+                <span className={styles.icon}> </span>
                 Advertising Outdoors
               </li>
-              <li className="text_style">
-                <span className="icon"> </span>
+              <li className={styles.text_style}>
+                <span className={styles.icon}> </span>
                 Effective Advertising Pointers
               </li>
-              <li className="text_style">
-                <span className="icon"> </span> Kook 2 Directory Add Url Free
+              <li className={styles.text_style}>
+                <span className={styles.icon}> </span> Kook 2 Directory Add Url
+                Free
               </li>
             </ul>
-            <a className="btn-conference" href="">
+            <a className={styles.btn_conference} href="">
               Discover Now
             </a>
           </div>

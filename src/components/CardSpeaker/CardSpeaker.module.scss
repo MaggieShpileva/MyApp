@@ -1,11 +1,11 @@
 .block {
-  width: 260px;
-  height: 300px;
+  width: 340px;
+  height: 370px;
+  margin-bottom: 10px;
 }
 
 .active_block {
-  margin: -300px auto;
-
+  margin: -370px auto;
   width: 0px;
   height: 30px;
   background-image: url("../../img/logo_bg.jpg");
@@ -16,10 +16,10 @@
 }
 
 .block:hover .active_block {
-  width: 130px;
+  width: 200px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   .twitter::after {
     background-image: url("../../img/twitter-3_icon-icons.com_50735.png");
     background-size: 90%;

@@ -1,15 +1,16 @@
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 import styles from "./Testimonials.module.scss";
-import { Comment } from "../Comment/Comment";
-import { addition } from "../../Redux/state";
-import { newAddedComment } from "../../Redux/state";
-import { Header } from "../Header/Header";
+import { Header } from "../Header/Header.tsx";
+import { Footer } from "../Footer/Footer.tsx";
+import { store } from "../../Redux/store.ts";
+import { Comment } from "../Comment/Comment.jsx";
 
-export const Testimonials = () => {
+export const Testimonials: FC = () => {
+  const comments = store.Testimonials;
   const [text, setText] = useState("");
-
+  console.log(comments);
   let add = () => {
-    newAddedComment(text);
+    comments.newAddedComment(text);
     setText("");
   };
 
@@ -32,7 +33,7 @@ export const Testimonials = () => {
         </p>
       </div>
 
-      <div>{renderPage(addition.comments)}</div>
+      <div>{renderPage(comments.comments)}</div>
       <div className={styles.mainWindow}>
         <h2>Комментарии</h2>
         <textarea
@@ -43,6 +44,7 @@ export const Testimonials = () => {
         ></textarea>
         <button onClick={add}>Добавить</button>
       </div>
+      <Footer />
     </div>
   );
 };
