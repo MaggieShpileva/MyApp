@@ -44,6 +44,7 @@ type Store = {
   };
   AboutUs: ImageType[];
   Footer: ImageType[];
+  Search: string;
 };
 
 export let store: Store = {
@@ -130,4 +131,5 @@ export let store: Store = {
     { image: FooterImg5 },
     { image: FooterImg6 },
   ],
+  Search: "",
 };

@@ -35,9 +35,10 @@ export const Header: FC = () => {
         </li>
 
         <li>
-          <a href="#" className={styles.point_menu}>
+          <NavLink to="/Blog" className={styles.point_menu}>
             blog
-          </a>
+            <link rel="stylesheet" href="Blog " />
+          </NavLink>
         </li>
         <li>
           <a href="#" className={styles.point_menu}>

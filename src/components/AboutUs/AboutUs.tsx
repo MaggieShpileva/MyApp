@@ -18,6 +18,7 @@ export const AboutUs: FC<Props> = () => {
       return <CardSpeaker key={`${index.toString()}`} image={item.image} />;
     });
   };
+
   return (
     <div className={styles.div_about_us}>
       <div className={styles.about_us}>

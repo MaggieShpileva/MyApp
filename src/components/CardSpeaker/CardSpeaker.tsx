@@ -5,7 +5,6 @@ type Props = {
   image: string;
 };
 export const CardSpeaker: FC<Props> = ({ image }) => {
-  console.log(image);
   return (
     <div className={styles.cardSpeaker}>
       <div className={styles.block}>
@@ -25,3 +24,5 @@ export const CardSpeaker: FC<Props> = ({ image }) => {
     </div>
   );
 };
+
+//563492ad6f91700001000001d1f3950303644582a4d16317aecec8d1
