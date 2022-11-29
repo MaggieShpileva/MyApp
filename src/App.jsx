@@ -5,6 +5,7 @@ import { Home } from "./components/Home/Home.tsx";
 import { AboutUs } from "./components/AboutUs/AboutUs.tsx";
 import { Testimonials } from "./components/Testimonials/Testimonials.tsx";
 import { Blog } from "./components/Blog/Blog.tsx";
+import { Contacts } from "./components/Contacts/index.tsx";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/AboutUs" element={<AboutUs />}></Route>
         <Route path="/Testimonials" element={<Testimonials />}></Route>
         <Route path="/Blog" element={<Blog />}></Route>
+        <Route path="/Contacts" element={<Contacts />}></Route>
       </Routes>
     </BrowserRouter>
   );

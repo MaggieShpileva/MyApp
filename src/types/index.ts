@@ -8,7 +8,7 @@ export type Post = {
   photographer_id: number;
   photographer_url: string;
   src: {
-    original: string;
+    portrait: string;
   };
   url: string;
   width: number;

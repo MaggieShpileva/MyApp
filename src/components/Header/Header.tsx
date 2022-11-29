@@ -42,7 +42,10 @@ export const Header: FC = () => {
         </li>
         <li>
           <a href="#" className={styles.point_menu}>
-            contacts
+            <NavLink to="/Contacts" className={styles.point_menu}>
+              Contacts
+              <link rel="stylesheet" href="Contacts " />
+            </NavLink>
           </a>
         </li>
       </ul>
