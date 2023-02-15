@@ -1,10 +1,10 @@
 import React, { FC, useRef } from "react";
 import styles from "../Footer/Footer.module.scss";
-import { store } from "../../Redux/store.ts";
+import { store } from "../../Redux/store";
 
 export const Footer: FC = () => {
   let renderImg = () => {
-    return store.Footer.map((el, index) => (
+    return store.Footer.map((el: any, index: number) => (
       <img key={`${index.toString()}`} src={el.image} alt="" />
     ));
   };

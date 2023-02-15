@@ -1,54 +1,53 @@
 .contact_content {
   margin-top: 10px;
-  background-color: aqua;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   height: 580px;
+  position: relative;
   .location {
     background-image: url("../../img/contact-content-bg.jpg");
     background-size: cover;
     width: 50%;
     height: 100%;
-    color: white;
-    h1 {
-      font-size: 40px;
-      font-weight: 700;
-    }
-    .container {
-      position: relative;
-      right: -200px;
-      width: 450px;
-      height: 450px;
-      display: flex;
-      flex-wrap: wrap;
-      margin-top: 45px;
-
-      .title {
-      }
-      .adress {
-      }
-      .phone {
-        width: 50%;
-      }
-
-      .email {
-        width: 50%;
-      }
-
-      p {
-        font-size: 16px;
-        margin: 0;
-      }
-      h6 {
-        font-size: 18px;
-        font-weight: 400;
-        margin: 0;
-      }
-    }
   }
   .map {
     width: 50%;
+  }
+  .container {
+    position: absolute;
+    width: 1200px;
+    height: 450px;
+    top: 55px;
+    display: flex;
+    flex-direction: column;
+    // margin-top: 45px;
+    margin: 0 auto;
+    color: white;
+    * {
+      margin-top: 10px;
+    }
+    .title {
+    }
+    .adress {
+    }
+    .phone {
+      width: 50%;
+    }
+
+    .email {
+      width: 50%;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 0;
+    }
+    h6 {
+      font-size: 18px;
+      font-weight: 400;
+      margin: 0;
+    }
   }
 }

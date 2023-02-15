@@ -1,9 +1,9 @@
 import React, { FC, useState } from "react";
 import styles from "./Testimonials.module.scss";
-import { Header } from "../Header/Header.tsx";
-import { Footer } from "../Footer/Footer.tsx";
-import { store } from "../../Redux/store.ts";
-import { Comment } from "../Comment/Comment.jsx";
+import { Header } from "../Header/Header";
+import { Footer } from "../Footer/Footer";
+import { store } from "../../Redux/store";
+import { Comment } from "../Comment/Comment";
 
 export const Testimonials: FC = () => {
   const comments = store.Testimonials;
@@ -14,8 +14,8 @@ export const Testimonials: FC = () => {
     setText("");
   };
 
-  let renderPage = (comments) => {
-    return comments?.map((comment, index) => (
+  let renderPage = (comments: any) => {
+    return comments?.map((comment: any, index: number) => (
       <Comment
         key={`${comment.text.toString()}-${index}`}
         newComment={comment}

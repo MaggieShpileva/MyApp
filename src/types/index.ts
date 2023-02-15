@@ -1,3 +1,5 @@
+import { DataState } from "../Redux/reducers/reducer";
+
 export type Post = {
   alt: string;
   avg_color: string;
@@ -15,3 +17,7 @@ export type Post = {
 };
 
 export type Posts = Post[];
+
+export type RootState = {
+  myData: DataState;
+};

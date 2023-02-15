@@ -3,7 +3,7 @@ import Twitter from "../../img/twitter-3_icon-icons.com_50735.png";
 import styles from "./Profile.module.scss";
 
 type Props = {
-  image: string;
+  image?: string;
   title: String;
   text: String;
 };

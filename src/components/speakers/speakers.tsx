@@ -1,10 +1,11 @@
 import React, { FC } from "react";
-import { Profile } from "../Profile/Profile.tsx";
+import { Profile } from "../Profile/Profile";
+import { Header } from "../Header/Header";
+import { Footer } from "../Footer/Footer";
+import { store } from "../../Redux/store";
+import { InfoData } from "../../Redux/store";
+
 import styles from "./speakers.module.scss";
-import { Header } from "../Header/Header.tsx";
-import { Footer } from "../Footer/Footer.tsx";
-import { store } from "../../Redux/store.ts";
-import { InfoData } from "../../Redux/store.ts";
 
 export const Speakers: FC = () => {
   const info: InfoData[] = store.speakersPage.info;
@@ -17,7 +18,7 @@ export const Speakers: FC = () => {
           return (
             <Profile
               key={`${item.name}-${index}`}
-              image={item.image}
+              image={item.image as string}
               title={item.name}
               text={item.text}
             />

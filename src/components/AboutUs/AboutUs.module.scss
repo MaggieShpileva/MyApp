@@ -1,5 +1,5 @@
 .div_about_us {
-  width: 1040px;
+  width: 1200px;
   margin: 0 auto;
   .about_us {
     display: flex;
@@ -24,17 +24,12 @@
     }
   }
   .CardSpeaker {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .sectionTitle {
-    margin: 0 auto;
-    padding-bottom: 50px;
-
-    h1 {
-      text-align: center;
-    }
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 5px;
+    background-color: red;
+    width: 100%;
+    height: 550px;
   }
 }

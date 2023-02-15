@@ -1,24 +1,29 @@
 import React, { FC, useState } from "react";
-import { Header } from "../Header/Header.tsx";
+import { Header } from "../Header/Header";
 import styles from "../Blog/Blog.module.scss";
 import { useEffect } from "react";
-import { axiosInstance } from "../../utils/axios.ts";
-import { Search } from "../SearchBar/Search.tsx";
-import { Post } from "../../types";
-import { Footer } from "../Footer/Footer.tsx";
+import { axiosInstance } from "../../utils/axios";
+import { Search } from "../SearchBar/Search";
+import { Post, RootState } from "../../types";
+import { Footer } from "../Footer/Footer";
 import { useDispatch, useSelector } from "react-redux";
 import {
   requestFotosStart,
   requestFotosSuccess,
-} from "../../Redux/actions/action";
-import { Loader } from "../Loader/Loader.jsx";
-// import { state } from "../../Redux/reducers/reducer";
+} from "../../Redux/actions/action.js";
+import { Loader } from "../Loader/Loader";
+import {
+  selectMyData,
+  selectMyDataLoading,
+} from "../../Redux/reducers/selectors";
+import { Events } from "../BlogEvents";
 
 export const Blog: FC = () => {
   const [posts, setPosts] = React.useState([]);
   const [search, setSearch] = useState<string>("news");
+  const data = useSelector(selectMyData);
+  const isLoading = useSelector(selectMyDataLoading);
   const dispatch = useDispatch();
-  // const isLoading = useSelector((state: any) => state.isLoading);
 
   const searchTitle = (searchName: string) => {
     setSearch(searchName);
@@ -34,15 +39,15 @@ export const Blog: FC = () => {
       );
     });
   };
+
   useEffect(() => {
     try {
       dispatch(requestFotosStart());
-      // console.log(isLoading);
       const getFoto = setTimeout(() => {
         axiosInstance
           .get(`search?query=${search}?`)
 
-          .then((res) => {
+          .then((res: any) => {
             dispatch(requestFotosSuccess(res.data));
             setPosts(res.data.photos);
           });
@@ -52,11 +57,15 @@ export const Blog: FC = () => {
     } catch {}
   }, [search]);
 
+  console.log(isLoading);
   return (
     <div className={styles.Blog}>
       <Header />
       <Search searchTitle={searchTitle} />
       {/* {isLoading && <Loader />} */}
+      {/* <Loader /> */}
+
+      <Events />
       <div className={styles.fotos}>{renderImages()}</div>
 
       <Footer />

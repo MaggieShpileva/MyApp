@@ -8,7 +8,7 @@ import React, {
 import styles from "../SearchBar/SearchBar.module.scss";
 
 type Props = {
-  searchTitle: (string) => void;
+  searchTitle: (string: any) => void;
 };
 
 export const Search: FC<Props> = ({ searchTitle }) => {

@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0 auto;
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
@@ -17,6 +17,13 @@
   margin-left: 0;
   height: 40px;
   width: 170px;
+}
+.menu {
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 li {
   display: inline-block;

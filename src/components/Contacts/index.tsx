@@ -1,35 +1,13 @@
 import React, { FC } from "react";
 import styles from "./index.module.scss";
-import { Header } from "../Header/Header.tsx";
+import { Header } from "../Header/Header";
+import { Footer } from "../Footer/Footer";
 export const Contacts: FC = () => {
   return (
     <>
       <Header />
       <div className={styles.contact_content}>
-        <div className={styles.location}>
-          <div className={styles.container}>
-            <div className={styles.title}>
-              <h1>Location</h1>
-              <p>Get directions to our event center</p>
-            </div>
-            <div className={styles.adress}>
-              <p>Address:</p>
-              <h6>01 Pascale Springs Apt. 339, NY City United State</h6>
-            </div>
-            <div className={styles.phone}>
-              <p>Phone:</p>
-              <h6>(+12)-345-67-8910</h6>
-            </div>
-            <div className={styles.email}>
-              <p>Email:</p>
-              <h6>info.colorlib@gmail.com</h6>
-            </div>
-            <div className={styles.email}>
-              <p>Website:</p>
-              <h6>https://conference.colorlib.com</h6>
-            </div>
-          </div>
-        </div>
+        <div className={styles.location}></div>
 
         <div className={styles.map}>
           <iframe
@@ -37,12 +15,34 @@ export const Contacts: FC = () => {
             width="100%"
             height="580"
             style={{ border: 0 }}
-            allowfullscreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
+
+        <div className={styles.container}>
+          <div className={styles.title}>
+            <h1>Location</h1>
+            <p>Get directions to our event center</p>
+          </div>
+          <div className={styles.adress}>
+            <p>Address:</p>
+            <h6>01 Pascale Springs Apt. 339, NY City United State</h6>
+          </div>
+          <div className={styles.phone}>
+            <p>Phone:</p>
+            <h6>(+12)-345-67-8910</h6>
+          </div>
+          <div className={styles.email}>
+            <p>Email:</p>
+            <h6>info.colorlib@gmail.com</h6>
+          </div>
+          <div className={styles.email}>
+            <p>Website:</p>
+            <h6>https://conference.colorlib.com</h6>
+          </div>
+        </div>
       </div>
+      <Footer />
     </>
   );
 };

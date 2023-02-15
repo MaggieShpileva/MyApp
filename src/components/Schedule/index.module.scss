@@ -1,0 +1,112 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 8% 0 8%;
+  box-sizing: border-box;
+  .sectionTitle {
+    margin-top: 70px;
+    text-align: center;
+
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      color: #171822;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #6a6b7c;
+      margin-bottom: 0;
+    }
+  }
+
+  .tablist {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    margin: 60px 0 60px 0;
+    box-shadow: 3px 10px 30px rgb(74 74 77 / 15%);
+    .day_block {
+      border-right: 1px solid #e7e7e8;
+      width: 20%;
+      text-align: center;
+      font-family: "Work Sans", sans-serif;
+
+      h3 {
+        color: #171822;
+        font-weight: 600;
+        font-size: 18px;
+        margin-bottom: 7px;
+      }
+
+      p {
+        font-size: 16px;
+        margin-top: 0;
+        color: #6a6b7c;
+        font-weight: 400;
+      }
+    }
+    .day_block_active {
+      border-right: 1px solid #e7e7e8;
+      border-radius: 2px;
+      border-color: #e7e7e8;
+      background-image: linear-gradient(120deg, #ee8425 0%, #f9488b 100%),
+        linear-gradient(120deg, #ee8425 0%, #f9488b 100%);
+      h3 {
+        color: #ffffff;
+      }
+      p {
+        color: #ffffff;
+      }
+    }
+  }
+  .speakers {
+    .cart {
+      display: grid;
+      grid-template-columns: 1fr 3fr 2fr;
+      margin-bottom: 30px;
+      img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      .cart_info {
+        h3 {
+          color: #171822;
+          font-weight: 600;
+          margin-bottom: 10px;
+          font-size: 24px;
+          font-family: "Work Sans", sans-serif;
+        }
+        .contact {
+          display: flex;
+          p {
+            margin: 0 15px 0 20px;
+            position: relative;
+          }
+          .person::before {
+            position: absolute;
+            content: "";
+            top: 0px;
+            left: -22px;
+            width: 20px;
+            height: 20px;
+            background-size: cover;
+            background-image: url("../../img/person_FILL0_wght400_GRAD0_opsz48.svg");
+          }
+        }
+      }
+
+      .schedule {
+        background-color: green;
+      }
+    }
+  }
+}
